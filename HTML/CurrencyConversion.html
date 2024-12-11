@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/CurrencyConversion.css">
+    <title>Calculator - Group 1 - PAM1011</title>
+</head>
+<body>
+    <div id="particles"></div>
+    <div class="main">
+        <div class="main-header">
+            <div class="main-header-left">
+                <li><a href="index.html">Calculator</a></li>
+                <li><a href="CurrencyConversion.html">Currency Conversion</a></li>
+                <li><a href="BinaryConversion.html">Binary Conversion</a></li>
+                <li><a href="Solve.html">Solve</a></li>
+            </div>
+            <div class="main-header-right">
+                <button>Download App</button>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="main-container-center">
+                <div class="main-container-center-1">
+                    <h1>Chuyển đổi tiền tệ</h1>
+                </div>
+                <div class="main-container-center-2">
+                    <div class="main-container-center-2-left">
+                        <div class="main-container-center-2-group">
+                            <div class="main-container-center-2-group-top">
+                                <p>Số tiền</p>
+                            </div>
+                            <div class="main-container-center-2-group-buttom">
+                                <div class="main-container-center-2-group-buttom-left">
+                                    <input type="number" id="fromNumber"">
+                                </div>
+                                <div class="main-container-center-2-group-buttom-right">
+                                    <div class="select">
+                                        <span class="selected" id="from">VND</span>
+                                        <div class="caret"></div>
+                                    </div>
+                                    <ul class="menu" id="mni-1"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-container-center-2-center">
+                        <img src="../Image/change.png" alt="">
+                    </div>
+                    <div class="main-container-center-2-buttom">
+                        <div class="main-container-center-2-group">
+                            <div class="main-container-center-2-group-top">
+                                <p>Số tiền</p>
+                            </div>
+                            <div class="main-container-center-2-group-buttom">
+                                <div class="main-container-center-2-group-buttom-left">
+                                    <input type="number" readonly id="toNumber">
+                                </div>
+                                <div class="main-container-center-2-group-buttom-right">
+                                    <div class="select">
+                                        <span class="selected" id="to">VND</span>
+                                        <div class="caret"></div>
+                                    </div>
+                                    <ul class="menu" id="mni-2"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-container-center-3">
+                    <button onclick="Conversion()">Chuyển</button>
+                    <button>Xóa</button>
+                </div>
+                <div class="main-container-center-4"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="../JavaScript/particles.js"></script>
+    <script src="../JavaScript/CurrencyConversion.js"></script>
+</body>
+</html>

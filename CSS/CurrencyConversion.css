@@ -1,0 +1,273 @@
+@font-face {
+    font-family: "UTM Avo";
+    src: url("../Font/UTM\ Avo.ttf");
+}
+@font-face {
+    font-family: "UTM Avo Bold";
+    src: url("../Font/UTM\ AvoBold.ttf");
+}
+
+* {
+    font-family: "UTM Avo";
+    margin: 0;
+}
+
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background-image: linear-gradient(to bottom left, #060513 0%, #12107b 90%);
+}
+
+.main {
+    position: relative;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+
+.main-header {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    padding: 10px;
+}
+
+.main-header-left {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.main-header-left a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.main-header-left a:hover {
+    color: #5553e2;
+}
+
+.main-header-right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+}
+
+.main-header-right button {
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #5553e2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-header-right button:hover {
+    background-color: white;
+    border: #5553e2;
+    color: #5553e2;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main-container-center {
+    margin-top: 15px;
+    width: 700px;
+    height: 550px;
+    border-radius: 30px;
+    display: grid;
+    grid-template-rows: 60px 110px 100px;
+    padding: 20px;
+    row-gap: 20px;
+}
+
+.main-container-center-1 {
+    display: grid;
+    place-content: center;
+}
+
+.main-container-center-1 h1 {
+    font-family: "UTM Avo Bold";
+    text-transform: uppercase;
+    color: white;
+}
+
+.main-container-center-2 {
+    background-color: white;
+    border-radius: 20px;
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 1fr 100px 1fr;
+    padding: 5px 20px;
+}
+.main-container-center-2-group {
+    display: grid;
+    row-gap: 10px;
+    grid-template-rows: 20px 1fr;
+}
+
+.main-container-center-2-group-buttom {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.main-container-center-2-group-buttom-left input {
+    width: 203px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    border: none;
+    background-color: #d8d7ff;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.main-container-center-2-group-buttom-right {
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.main-container-center-2-group-buttom-right * {
+    box-sizing: border-box;
+}
+
+.select {
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #5553e2;
+    font-family: "UTM Avo Bold";
+    font-weight: bold;
+}
+
+.select-clicked {
+    box-shadow: 0 0 0.8em #5553e2;
+}
+
+.caret {
+    position: relative;
+    right: -8px;
+    top: 3px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;;
+    transition: 0.3s;
+}
+
+.caret-rotate {
+    transform: rotate(180deg);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    background-color: #5553e2;
+    padding: 0.2em 1em;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.3s;
+    z-index: 1;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.menu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+.menu li:hover {
+    font-family: "UTM Avo Bold";
+}
+
+.active {
+    font-family: "UTM Avo Bold";
+}
+
+.menu-open {
+    display: block;
+    opacity: 1;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.main-container-center-2-center {
+    padding-top: 25px;
+    display: grid;
+    place-content: center;
+}
+
+.main-container-center-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-container-center-3 button {
+    width: 150px;
+    height: 30px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-container-center-3 button:nth-child(1) {
+    background-color: #5553e2;
+}
+
+.main-container-center-3 button:nth-child(1):hover {
+    background-color: white;
+    color: #5553e2;
+}
+
+.main-container-center-3 button:nth-child(2) {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main-container-center-3 button:nth-child(2):hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
