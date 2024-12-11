@@ -53,9 +53,16 @@ function LoadCurrency() {
 LoadCurrency();
 
 function Conversion() {
+  const SOUND = new Audio("../Sound/boom.mp3");
+  SOUND.play();
+
   const from = document.getElementById("from").textContent;
   const fromNumber = document.getElementById("fromNumber").value;
   const to = document.getElementById("to").textContent;
+
+  if (fromNumber == "") {
+    return;
+  }
 
   fetch(`https://api.exchangerate-api.com/v4/latest/${from}`)
   .then(res => res.json())
@@ -66,4 +73,12 @@ function Conversion() {
 
       document.getElementById("toNumber").value = ketQua;
   });
+}
+
+function DeleteAll() {
+  const SOUND = new Audio("../Sound/Amongus.mp3");
+  SOUND.play();
+
+  document.getElementById("fromNumber").value = "";
+  document.getElementById("toNumber").value = "";
 }
