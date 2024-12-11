@@ -1,0 +1,296 @@
+@font-face {
+    font-family: "UTM Avo";
+    src: url("../Font/UTM\ Avo.ttf");
+}
+@font-face {
+    font-family: "UTM Avo Bold";
+    src: url("../Font/UTM\ AvoBold.ttf");
+}
+
+* {
+    font-family: "UTM Avo";
+    margin: 0;
+}
+
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background-image: linear-gradient(to bottom, #060513 0%, #12107b 90%);
+}
+
+.main {
+    position: relative;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+
+.main-header {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    padding: 10px;
+}
+
+.main-header-left {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.main-header-left a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.main-header-left a:hover {
+    color: #5553e2;
+}
+
+.main-header-right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+}
+
+.main-header-right button {
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #5553e2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-header-right button:hover {
+    background-color: white;
+    border: #5553e2;
+    color: #5553e2;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main-container-center {
+    margin-top: 15px;
+    width: 500px;
+    height: 550px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    display: grid;
+    grid-template-rows: 130px 1fr;
+    padding: 20px;
+    row-gap: 20px;
+}
+
+.main-container-center-top {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 30px;
+    display: grid;
+    grid-row: 1fr 1fr;
+    row-gap: 5px;
+}
+
+.main-container-center-top-top {
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px 0px 30px;
+}
+
+.main-container-center-top-top h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 380px;
+    padding: 0px 30px 0px 30px;
+    color: white;
+}
+
+.main-container-center-top-buttom {
+    border-radius: 0px 0px 30px 30px;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px 0px 30px;
+}
+
+.main-container-center-top-buttom h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 380px;
+    padding: 0px 30px 0px 30px;
+    text-align: right;
+    color: white;
+}
+
+.main-container-center-buttom {
+    padding-right: 10px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    column-gap: 10px;
+}
+
+.main-container-center-buttom-left {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.main-container-center-buttom-left-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.main-container-center-buttom-left-1 button {
+    border-radius: 15px;
+    background-color: #5553e2;
+    font-family: "UTM Avo Bold";
+    text-transform: uppercase;
+    font-size: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-container-center-buttom-left-1 button:hover {
+    background-color: white;
+    color: #5553e2;
+}
+
+.main-container-center-buttom-left-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.main-container-center-buttom-left-2 button {
+    border-radius: 15px;
+    background-color: white;
+    font-family: "UTM Avo Bold";
+    font-size: 20px;
+    border: none;
+    color: #0f1063;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-container-center-buttom-left-2 button:hover {
+    background-color: #5553e2;
+    color: white;
+}
+
+.main-container-center-buttom-left-3, .main-container-center-buttom-left-4, .main-container-center-buttom-left-5, .main-container-center-buttom-left-6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.main-container-center-buttom-left-3 button, .main-container-center-buttom-left-4 button, .main-container-center-buttom-left-5 button, .main-container-center-buttom-left-6 button {
+    border-radius: 15px;
+    background-color: white;
+    font-family: "UTM Avo Bold";
+    font-size: 20px;
+    border: none;
+    color: #0f1063;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-container-center-buttom-left-3 button:hover, .main-container-center-buttom-left-4 button:hover, .main-container-center-buttom-left-5 button:hover, .main-container-center-buttom-left-6 button:hover {
+    background-color: #5553e2;
+    color: white;
+}
+
+.main-container-center-buttom-right {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 10px;
+}
+
+.main-container-center-buttom-right-1 {
+    grid-row: 1 / 3;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.main-container-center-buttom-right-2, .main-container-center-buttom-right-5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.main-container-center-buttom-right-4, .main-container-center-buttom-right-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.main-container-center-buttom-right-2 button, .main-container-center-buttom-right-3 button, .main-container-center-buttom-right-4 button, .main-container-center-buttom-right-5 button {
+    border-radius: 15px;
+    background-color: white;
+    font-family: "UTM Avo Bold";
+    font-size: 20px;
+    border: none;
+    color: #0f1063;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-container-center-buttom-right-2 button:hover, .main-container-center-buttom-right-3 button:hover, .main-container-center-buttom-right-4 button:hover, .main-container-center-buttom-right-5 button:hover {
+    background-color: #5553e2;
+    color: white;
+}
+
+.main-container-center-buttom-right-1 {
+    padding: 10px 5px;
+    display: grid;
+    grid-auto-rows: 25px;
+    row-gap: 3px;
+    overflow-y: auto;
+}
+.main-container-center-buttom-right-1-items {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.main-container-center-buttom-right-1-items-left {
+    display: flex;
+    align-items: center;
+    padding: 0 1.5px 0 1.5px;
+}
+
+.main-container-center-buttom-right-1-items-left p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100px;
+    text-align: right;
+    color: white;
+}
+
+.main-container-center-buttom-right-1-items-right {
+    display: grid;
+    place-items: center;
+}
+
+.main-container-center-buttom-right-1-items-right button {
+    background-color: #5553e2;
+    color: white;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Calculator.css">
+    <title>Calculator - Group 1 - PAM1011</title>
+</head>
+<body>
+    <div id="particles"></div>
+    <div class="main">
+        <div class="main-header">
+            <div class="main-header-left">
+                <li><a href="#">Calculator</a></li>
+                <li><a href="#">Currency Conversion</a></li>
+                <li><a href="#">Binary Conversion</a></li>
+                <li><a href="#">Solve</a></li>
+            </div>
+            <div class="main-header-right">
+                <button>Download App</button>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="main-container-center">
+                <div class="main-container-center-top">
+                    <div class="main-container-center-top-top">
+                        <h3 id="input"></h3>
+                    </div>
+                    <div class="main-container-center-top-buttom">
+                        <h3 id="output"></h3>
+                    </div>
+                </div>
+                <div class="main-container-center-buttom">
+                    <div class="main-container-center-buttom-left">
+                        <div class="main-container-center-buttom-left-1">
+                            <button onclick="Remove1()">DEL</button>
+                            <button onclick="RemoveAll()">AC</button>
+                        </div>
+                        <div class="main-container-center-buttom-left-2">
+                            <button onclick="AddMath('Sin(')">Sin</button>
+                            <button onclick="AddMath('Cos(')">Cos</button>
+                            <button onclick="AddMath('Tan(')">Tan</button>
+                        </div>
+                        <div class="main-container-center-buttom-left-3">
+                            <button onclick="AddMath('7')">7</button>
+                            <button onclick="AddMath('8')">8</button>
+                            <button onclick="AddMath('9')">9</button>
+                            <button onclick="AddMath(' + ')">+</button>
+                        </div>
+                        <div class="main-container-center-buttom-left-4">
+                            <button onclick="AddMath('4')">4</button>
+                            <button onclick="AddMath('5')">5</button>
+                            <button onclick="AddMath('6')">6</button>
+                            <button onclick="AddMath(' - ')">-</button>
+                        </div>
+                        <div class="main-container-center-buttom-left-5">
+                            <button onclick="AddMath('1')">1</button>
+                            <button onclick="AddMath('2')">2</button>
+                            <button onclick="AddMath('3')">3</button>
+                            <button onclick="AddMath(' * ')">*</button>
+                        </div>
+                        <div class="main-container-center-buttom-left-6">
+                            <button onclick="AddMath('0')">0</button>
+                            <button onclick="AddMath('.')">.</button>
+                            <button onclick="KetQua()">=</button>
+                            <button onclick="AddMath(' / ')">/</button>
+                        </div>
+                    </div>
+                    <div class="main-container-center-buttom-right">
+                        <div class="main-container-center-buttom-right-1" id="history">
+                        </div>
+                        <div class="main-container-center-buttom-right-2">
+                            <button onclick="AddMath('e')">e</button>
+                            <button onclick="AddMath('π')">π</button>
+                        </div>
+                        <div class="main-container-center-buttom-right-3">
+                            <button onclick="AddMath('√(')">√</button>
+                        </div>
+                        <div class="main-container-center-buttom-right-4">
+                            <button onclick="AddMath('log(')">log</button>
+                        </div>
+                        <div class="main-container-center-buttom-right-5">
+                            <button onclick="AddMath('(')">(</button>
+                            <button onclick="AddMath(')')">)</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://kit.fontawesome.com/476445fe42.js" crossorigin="anonymous"></script>
+    <script src="../JavaScript/particles.js"></script>
+    <script src="../JavaScript/tinhtoan.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "UTM Avo";
+    src: url("../Font/UTM\ Avo.ttf");
+}
+@font-face {
+    font-family: "UTM Avo Bold";
+    src: url("../Font/UTM\ AvoBold.ttf");
+}
+
+* {
+    font-family: "UTM Avo";
+    margin: 0;
+}
+
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background-image: linear-gradient(to bottom, #060513 0%, #12107b 90%);
+}
+
+.main {
+    position: relative;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+
+.main-header {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    padding: 10px;
+}
+
+.main-header-left {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.main-header-left a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.main-header-left a:hover {
+    color: #5553e2;
+}
+
+.main-header-right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+}
+
+.main-header-right button {
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #5553e2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-header-right button:hover {
+    background-color: white;
+    border: #5553e2;
+    color: #5553e2;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main-container-center {
+    /* margin-top: 15px;
+    width: 500px;
+    height: 550px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    display: grid;
+    grid-template-rows: 130px 1fr;
+    padding: 20px;
+    row-gap: 20px; */
+}
