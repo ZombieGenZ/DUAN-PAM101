@@ -32,7 +32,7 @@ function LoadHistory() {
 }
 
 function LoadDisplay(dis, str) {
-    const SOUND = new Audio("../Sound/hoituong.mp3");
+    const SOUND = new Audio("./Sound/hoituong.mp3");
     SOUND.play();
 
     INPUT.textContent = dis;
@@ -40,7 +40,7 @@ function LoadDisplay(dis, str) {
 }
 
 function AddMath(math) {
-    const SOUND = new Audio("../Sound/duck.mp3");
+    const SOUND = new Audio("./Sound/duck.mp3");
     SOUND.play();
 
     INPUT.textContent += math;
@@ -78,7 +78,7 @@ function AddMath(math) {
 }
 
 function KetQua() {
-    const SOUND = new Audio("../Sound/boom.mp3");
+    const SOUND = new Audio("./Sound/boom.mp3");
     SOUND.play();
 
     try {
@@ -118,7 +118,7 @@ function KetQua() {
 }
 
 function Remove1() {
-    const SOUND = new Audio("../Sound/uh.mp3");
+    const SOUND = new Audio("./Sound/uh.mp3");
     SOUND.play();
 
     if (INPUT.textContent.substring(INPUT.textContent - 5) == "Error") {
@@ -165,7 +165,7 @@ function Remove1() {
 }
 
 function RemoveAll() {
-    const SOUND = new Audio("../Sound/Amongus.mp3");
+    const SOUND = new Audio("./Sound/Amongus.mp3");
     SOUND.play();
 
     mathString = "";
