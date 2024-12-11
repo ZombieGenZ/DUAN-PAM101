@@ -12,6 +12,10 @@
     margin: 0;
 }
 
+.selected-pape {
+    color: #5553e2 !important;
+}
+
 #particles {
     position: fixed;
     top: 0;
