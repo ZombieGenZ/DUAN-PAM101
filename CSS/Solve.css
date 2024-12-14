@@ -1,0 +1,328 @@
+@font-face {
+    font-family: "UTM Avo";
+    src: url("../Font/UTM\ Avo.ttf");
+}
+@font-face {
+    font-family: "UTM Avo Bold";
+    src: url("../Font/UTM\ AvoBold.ttf");
+}
+
+* {
+    font-family: "UTM Avo";
+    margin: 0;
+}
+
+.selected-pape {
+    color: #5553e2 !important;
+}
+
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background-image: linear-gradient(to bottom left, #060513 0%, #12107b 90%);
+}
+
+.main {
+    position: relative;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+
+.main-header {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    padding: 10px 30px;
+}
+
+.main-header-left {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.main-header-left li {
+    list-style: none;
+}
+
+.main-header-left a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.main-header-left a:hover {
+    color: #5553e2;
+}
+
+.main-header-right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+}
+
+.main-header-right button {
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #5553e2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-header-right button:hover {
+    background-color: white;
+    border: #5553e2;
+    color: #5553e2;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main-container-center {
+    margin-top: 15px;
+    width: 800px;
+    height: 550px;
+    border-radius: 30px;
+    display: grid;
+    grid-template-rows: 100px 100px 50px 100px 1fr;
+    padding: 20px;
+    row-gap: 20px;
+}
+
+.main-container-center-top-type {
+    position: relative;
+    width: 250px;
+    height: 60px;
+}
+
+.main-container-center-top-type * {
+    box-sizing: border-box;
+}
+
+.select {
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #5553e2;
+    font-family: "UTM Avo Bold";
+    font-weight: bold;
+}
+
+.select-clicked {
+    box-shadow: 0 0 0.8em #5553e2;
+}
+
+.caret {
+    position: relative;
+    right: -8px;
+    top: 3px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;;
+    transition: 0.3s;
+}
+
+.caret-rotate {
+    transform: rotate(180deg);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    background-color: #5553e2;
+    padding: 0.2em 1em;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.3s;
+    z-index: 1;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.menu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+.menu li:hover {
+    font-family: "UTM Avo Bold";
+}
+
+.active {
+    font-family: "UTM Avo Bold";
+}
+
+.menu-open {
+    display: block;
+    opacity: 1;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.main-container-center-top {
+    display: grid;
+    place-items: center;
+}
+
+.main-container-center-center-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    place-items: center;
+}
+
+.main-container-center-center-1-items {
+    width: 200px;
+    height: 70px;
+    display: grid;
+    grid-template-rows: 30px 1fr;
+    border-radius: 10px;
+}
+
+.main-container-center-center-1-items-top {
+    background-color: #5553e2;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+.main-container-center-center-1-items-top h4 {
+    font-family: "UTM Avo Bold";
+    text-align: center;
+}
+
+.main-container-center-center-1-items-button input {
+    width: 200px;
+    height: 100%;
+    border-radius: 0 0 10px 10px;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.main-container-center-center-2 {
+    display: grid;
+    place-items: center;
+}
+
+.main-container-center-center-2 button {
+    font-size: 16px;
+    padding: 5px 50px;
+    border: none;
+    background-color: #5553e2;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "UTM Avo Bold";
+}
+
+.main-container-center-center-2 button:hover {
+    background-color: white;
+    color: #5553e2;
+}
+
+.main-container-center-center-3 {
+    display: grid;
+    place-items: center;
+}
+
+.main-container-center-center-3-ketqua {
+    width: 300px;
+    height: 80px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    padding: 5px;
+}
+
+.main-container-center-bottom {
+    display: grid;
+    place-items: center;
+}
+
+.main-container-center-bottom-history {
+    width: 400px;
+    height: 100%;
+    border-radius: 10px;
+    color: black;
+    padding: 5px 10px;
+    background-color: #fff3;
+    display: grid;
+    grid-auto-rows: 20px;
+    row-gap: 5px;
+}
+
+.main-container-center-bottom-history-items {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+}
+
+.main-container-center-bottom-history-items-left {
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 350px;
+}
+
+.main-container-center-bottom-history-items-right {
+    display: grid;
+    place-content: center;
+}
+
+.main-container-center-bottom-history-items-right button {
+    color: white;
+    background-color: #5553e2;
+    border: none;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#soC:read-only {
+    background-color: rgb(198, 198, 198);
+}

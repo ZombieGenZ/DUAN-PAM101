@@ -43,6 +43,10 @@ function AddMath(math) {
     const SOUND = new Audio("./Sound/duck.mp3");
     SOUND.play();
 
+    if (INPUT.textContent.includes("Error")) {
+        return;
+    }
+
     INPUT.textContent += math;
 
     if (math == "Sin(") {
@@ -80,6 +84,10 @@ function AddMath(math) {
 function KetQua() {
     const SOUND = new Audio("./Sound/boom.mp3");
     SOUND.play();
+
+    if (INPUT.textContent.includes("Error")) {
+        return;
+    }
 
     try {
         OUTPUT.textContent = eval(mathString);

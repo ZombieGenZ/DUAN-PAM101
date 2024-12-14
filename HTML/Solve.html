@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Solve.css">
+    <title>Calculator - Group 1 - PAM1011</title>
+</head>
+<body>
+    <div id="particles"></div>
+    <div class="main">
+        <div class="main-header">
+            <div class="main-header-left">
+                <li><a href="../index.html">Calculator</a></li>
+                <li><a href="./HTML/CurrencyConversion.html">Currency Conversion</a></li>
+                <li><a href="./HTML/BinaryConversion.html">Binary Conversion</a></li>
+                <li><a class="selected-pape" href="./HTML/Solve.html">Solve</a></li>
+            </div>
+            <div class="main-header-right">
+                <button onclick="Download()">Download App</button>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="main-container-center">
+                <div class="main-container-center-top">
+                    <div class="main-container-center-top-type" id="type">
+                        <div class="select">
+                            <span class="selected" id="from">Phương trình bật 1</span>
+                            <div class="caret"></div>
+                        </div>
+                        <ul class="menu" id="mni">
+                            <li class="active" id="selection_1">Phương trình bật 1</li>
+                            <li id="selection_2">Phương trình bật 2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-container-center-center-1">
+                    <div class="main-container-center-center-1-items">
+                        <div class="main-container-center-center-1-items-top">
+                            <h4>Số A</h4>
+                        </div>
+                        <div class="main-container-center-center-1-items-button">
+                            <input type="number" id="soA">
+                        </div>
+                    </div>
+                    <div class="main-container-center-center-1-items">
+                        <div class="main-container-center-center-1-items-top">
+                            <h4>Số B</h4>
+                        </div>
+                        <div class="main-container-center-center-1-items-button">
+                            <input type="number" id="soB">
+                        </div>
+                    </div>
+                    <div class="main-container-center-center-1-items">
+                        <div class="main-container-center-center-1-items-top">
+                            <h4>Số C</h4>
+                        </div>
+                        <div class="main-container-center-center-1-items-button">
+                            <input type="number" id="soC" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-container-center-center-2">
+                    <button onclick="Tinh()">Tính</button>
+                </div>
+                <div class="main-container-center-center-3">
+                    <div class="main-container-center-center-3-ketqua" id="ketQua"></div>
+                </div>
+                <div class="main-container-center-bottom">
+                    <div class="main-container-center-bottom-history" id="history">
+                        <div class="main-container-center-bottom-history-items">
+                            <div class="main-container-center-bottom-history-items-left">
+                                A: 1293, B: 8912, C: 1829 12839 12983u 12398123 98123u
+                            </div>
+                            <div class="main-container-center-bottom-history-items-right">
+                                <button onclick="LoadMath()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> -->
+    <!-- <script src="../JavaScript/particles.js"></script> -->
+    <script src="https://kit.fontawesome.com/476445fe42.js" crossorigin="anonymous"></script>
+    <script src="../JavaScript/download.js"></script>
+    <script src="../JavaScript/Solve.js"></script>
+</body>
+</html>
