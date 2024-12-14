@@ -208,6 +208,9 @@ function Tinh() {
 }
 
 function LoadMath(a, b, c, type) {
+    const SOUND = new Audio("./Sound/hoituong.mp3");
+    SOUND.play();
+
     let menu = document.getElementById("type");
     
     if (type == 1) {
