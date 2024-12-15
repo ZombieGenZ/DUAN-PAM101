@@ -78,6 +78,9 @@ function binaryToString(binary) {
 }
 
 function Conversion() {
+    const SOUND = new Audio("../Sound/boom.mp3");
+    SOUND.play();
+
     const start = document.getElementById("start").value;
     const end = document.getElementById("end");
 
