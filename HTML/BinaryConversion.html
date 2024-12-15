@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/BinaryConversion.css">
+    <title>Calculator - Group 1 - PAM1011</title>
+</head>
+<body>
+    <div id="particles"></div>
+    <div class="main">
+        <div class="main-header">
+            <div class="main-header-left">
+                <li><a href="../index.html">Calculator</a></li>
+                <li><a href="./CurrencyConversion.html">Currency Conversion</a></li>
+                <li><a class="selected-pape" href="./BinaryConversion.html">Binary Conversion</a></li>
+                <li><a href="./Solve.html">Solve</a></li>
+            </div>
+            <div class="main-header-right">
+                <button onclick="Download()">Download App</button>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="main-container-center">
+                <div class="main-container-center-top">
+                    <div class="main-container-center-top-1">
+                        <div class="main-container-center-top-group">
+                            <div class="main-container-center-top-group-top">
+                                <div class="select">
+                                    <span class="selected" id="from">Text</span>
+                                    <div class="caret"></div>
+                                </div>
+                                <ul class="menu" id="mni-1">
+                                    <li onclick="CheckSelect_mni_1()" id="mni-1-select-1" class="active">Text</li>
+                                    <li onclick="CheckSelect_mni_1()" id="mni-1-select-2">Binary</li>
+                                </ul>
+                            </div>
+                            <div class="main-container-center-top-group-button">
+                                <textarea id="start"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-container-center-top-2">
+                        <img src="../Image/change-while.png" alt="">
+                    </div>
+                    <div class="main-container-center-top-3">
+                        <div class="main-container-center-top-group">
+                            <div class="main-container-center-top-group-top">
+                                <div class="select">
+                                    <span class="selected" id="to">Binary</span>
+                                    <div class="caret"></div>
+                                </div>
+                                <ul class="menu" id="mni-2">
+                                    <li onclick="CheckSelect_mni_2()" id="mni-2-select-1">Text</li>
+                                    <li onclick="CheckSelect_mni_2()" id="mni-2-select-2" class="active">Binary</li>
+                                </ul>
+                            </div>
+                            <div class="main-container-center-top-group-button">
+                                <textarea id="end" readonly></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-container-center-button">
+                    <button onclick="Conversion()">Chuyển</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> -->
+    <!-- <script src="../JavaScript/particles.js"></script> -->
+    <script src="../JavaScript/download.js"></script>
+    <script src="../JavaScript/BinaryConversion.js"></script>
+</body>
+</html>
